@@ -1,0 +1,24 @@
+.content-container {
+  background: rgba(0, 49, 117, 1);
+  border-radius: 15px;
+  width: 100%;
+  padding: 4rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.search-container {
+  width: 16rem;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll; 
+}

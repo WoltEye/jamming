@@ -1,0 +1,14 @@
+.cookie-popup {
+  background: rgba(0, 49, 117, 1);
+  border-radius: 15px;
+}
+
+.cookie-content-container {
+  padding: 1.5rem;
+}
+
+.cookie-button {
+  border-radius: 15px;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}

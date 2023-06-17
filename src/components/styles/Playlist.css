@@ -1,0 +1,22 @@
+#playlist-title {
+  font-size: 2rem;
+  border: none;
+  margin: 0 0 1.4rem 0;
+  background: rgba(0,0,0,0);
+  height: 37px;
+  color: white;
+}
+
+#playlist-title:focus {
+    outline: none;
+}
+
+div.playlist-container {
+  display: flex;
+  flex-direction: column;
+  width: 16em;
+}
+
+button {
+  height: 1.45rem;
+}

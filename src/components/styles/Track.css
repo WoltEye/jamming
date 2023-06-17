@@ -1,0 +1,12 @@
+* {
+  color: whitesmoke;
+}
+
+li:hover {
+  background-color:#004099;
+  cursor: pointer;   
+}
+
+button {
+  color: black;
+}

@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive'
 import SearchBar from './components/SearchBar.jsx';
 import SearchResults from './components/SearchResults.jsx';
 import Playlist from './components/Playlist.jsx';
@@ -13,10 +12,6 @@ function App() {
     const [ addedTracks, setAddedTracks ] = useState([]);
     const [ playlistTitle, setPlaylistTitle ] = useState('New Playlist');
     const [ popupState, setPopupState ] = useState(false);
-    //Screen sizes
-    const isMobileBig = useMediaQuery({ query: '(max-width:850px) and (min-width:701px' });
-    const isMobileMedium = useMediaQuery({ query: '(max-width:700px)' });
-    const isMobileSmall = useMediaQuery({query: '(max-width: 540px)'})
 
     useEffect(() => {
       if(document.cookie) {
@@ -79,12 +74,9 @@ function App() {
 { popupState ? (
 <>
 <h1>Jamming</h1>
- <div className="content-container"
- style={isMobileBig ? { width: '80%' } : isMobileSmall ? {padding: '2rem 1rem'} : {width: '100%', padding: '4rem'}}>
-   <div className="flex-container"
-   style={isMobileMedium ? { flexDirection: 'column', alignItems: 'center' } : { flexDirection: 'row' }}>
-     <div className="search-container"
-     style={isMobileMedium ? {marginRight: '0', marginBottom: '2rem'} : {marginRight: '2rem'}}>
+ <div className="content-container">
+   <div className="flex-container">
+     <div className="search-container">
        <SearchBar onSearch={onSearch} onChange={onChange}/>
        <SearchResults results={searchResults} onAdd={onAdd}/>
      </div>
@@ -94,7 +86,9 @@ function App() {
      onTitleChange={onTitleChange}
      onRemove={onRemove}/>
      </div>
- </div> </>) : 
+ </div> 
+ </>
+ ) : 
  (
  <Cookies
   onAccept={onAccept}

@@ -22,3 +22,49 @@
   align-items: center;
   overflow-y: scroll; 
 }
+
+
+/* Width */
+@media only screen and (max-width: 790px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }  
+  .search-container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .content-container {
+    padding: 3rem 3rem;  
+  }  
+}
+
+@media only screen and (max-width: 460px) {
+  .content-container {
+    padding: 3rem 2rem;  
+  }  
+}
+
+@media only screen and (max-width: 390px) {
+  .content-container {
+    padding: 3rem 1rem;  
+  }  
+}
+
+/* Height */
+
+@media only screen and (max-height: 870px) {
+  .content-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }  
+}
+/* If height lower than this index.css will set body overflow to scroll */
+@media only screen and (max-height: 830px) {
+  .content-container {
+  padding-top: 2rem;
+  padding-bottom: 1rem; 
+}
+}

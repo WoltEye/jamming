@@ -12,3 +12,13 @@
   margin: 0 1rem 0 0;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width: 430px) {
+  .cookie-popup {
+    width: 95%;  
+  }
+  .cookie-content-container {
+    width: 90%;
+  }
+}

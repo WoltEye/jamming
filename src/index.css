@@ -35,3 +35,9 @@ html, body {
   align-items: center;
   margin: 1rem 0;
 }
+
+@media only screen and (max-height: 815px) {
+  body {
+    overflow-y: scroll;
+  }
+}

@@ -17,7 +17,10 @@ function Track(props) {
       data-value={props.trackId} 
       data-index={props.index}>
         {props.trackAlbum}
-      </p>    
+      </p> 
+      { props.trackPreview ? <audio controls>
+        <source src={props.trackPreview} type="audio/mp3" />
+      </audio> : <p className="preview-error">No preview available</p> }
     </li>
   );
 }

@@ -10,3 +10,11 @@ li:hover {
 button {
   color: black;
 }
+
+.preview-error {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+audio {
+  width: 10rem;
+}

@@ -13,6 +13,7 @@ function SearchResults(props) {
     }) : track.artists[0].name 
 }    
     trackAlbum={track.album.name}
+    trackPreview={track.preview_url}
     trackId={track.id}
     onAdd={props.onAdd}
     key={index} />

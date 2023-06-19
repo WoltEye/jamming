@@ -20,6 +20,7 @@ function Playlist(props) {
       }) : track.artists[0].name 
 }        trackAlbum={track.album.name}
         trackId={track.id}
+        trackPreview={track.preview_url}
         key={index}
         onRemove={props.onRemove}/>) }
       </ul>

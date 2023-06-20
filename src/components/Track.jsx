@@ -3,7 +3,6 @@ import './styles/Track.css';
 
 function Track(props) {
   const [ isPlaying, setIsPlaying ] = useState(false);
-  let preview;
   const audioRef = useRef(null);
 
   const playPreview = () => {

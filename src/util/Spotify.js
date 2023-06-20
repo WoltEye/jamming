@@ -1,5 +1,5 @@
 const clientID = '';
-const redirect_uri = ''
+const redirect_uri = '';
 let accessToken = '';
 
 /* Redirect to spotify authorize page if access token doesnt already exist */
